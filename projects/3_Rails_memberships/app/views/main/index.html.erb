@@ -1,0 +1,30 @@
+
+<div id = "signup"><h1>Sign up</h1>
+<form action="/members" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		First Name: <input type="text" name="first_name">
+		Last Name: <input type="text" name="last_name">
+		Email: <input type="email" id="Email" name="email">
+
+		Password:<input type="password" name="password">
+	<!-- Password Confirmation
+		<input type="password" id="Password Confirmation" name="password_confirmation"> -->
+
+	<input type="submit" value="Register">
+</form>
+</div>
+
+<div id = "login">
+<h1>Login</h1>
+
+<form action="/main/new" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		Email: <input type="email" name="email">
+Password: <input type="password" name="password">
+	<input type="submit" value="Login">
+</form>
+</div>
+<div id="section5">
+	<h1>Contact Info</h1>
+	<h3>Any Question Please address it to: Wenjiewuchem@gmail.com</h3>
+</div>
